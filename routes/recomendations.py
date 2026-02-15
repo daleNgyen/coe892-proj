@@ -32,30 +32,3 @@ async def get_recommendations(
         book["_id"] = str(book["_id"])
     
     return recommendations
-```
-
-## Project Structure
-```
-library-api/
-├── venv/
-├── config/
-│   └── database.py
-├── models/
-│   ├── user.py
-│   ├── book.py
-│   ├── checkout.py
-│   └── reservation.py
-├── routes/
-│   ├── auth.py
-│   ├── books.py
-│   ├── checkouts.py
-│   ├── reservations.py
-│   ├── admin.py
-│   └── recommendations.py
-├── middleware/
-│   └── auth.py
-├── main.py
-├── .env
-├── .gitignore
-├── requirements.txt
-└── API_DOCS.md
