@@ -15,8 +15,8 @@ def connect_db():
         raise ValueError("MONGO_URI not found in environment variables")
     
     client = MongoClient(MONGO_URI)
-    db = client["library_db"]
-    print("✅ MongoDB connected successfully")
+    db = client["libraryDB"]
+    print("MongoDB connected successfully")
     return db
 
 def get_db():

@@ -2,8 +2,13 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from routes import auth, books, checkouts, reservations
 import uvicorn
+from config.database import connect_db
+
 
 app = FastAPI(title="Library Management API", version="1.0.0")
+
+
+connect_db() #srtting up code to connect to the data base i set upp
 
 app.add_middleware(
     CORSMiddleware,
