@@ -1,9 +1,9 @@
 General side notes:
 
 Setup:
-1. Ensure you create .env 
-MONGO_URI=<personal connection>
-JWT_SECRET=<random key>
+1. Ensure you create .env
+MONGO_URI= personal connection
+JWT_SECRET= random key
 
 Steps to run:
 # Terminal 1:
